@@ -1,26 +1,29 @@
 # dotfiles
 This is my dotfiles.
 
-Window Manager: i3
+Window Manager: [i3](https://i3wm.org/)
 
-Statusbar: Polybar for main. i3status for gpu mode
+Statusbar: [Polybar](https://github.com/polybar/polybar) for main. [i3status](https://i3wm.org/docs/i3status.html) for GPU mode
 
-Compositor: Picom
+Compositor: [Picom](https://github.com/yshui/picom)
 
-Notifier: Dunstify
+Notifier: [Dunst](https://github.com/dunst-project/dunst)
 
-File Manager: Thunar
+File Manager: [Thunar](https://docs.xfce.org/xfce/thunar/start)
 
-Terminal: XTerm
+Terminal: [XTerm](https://docs.xfce.org/apps/terminal/start)
 
-Shell: Zsh
+Shell: [Zsh](https://www.zsh.org/)
 
-Gtk theme: Sweet
+Gtk theme: [Sweet](https://github.com/EliverLara/Sweet)
 
-Gtk icons: candy-icons (Icons for Sweet[Gtk theme] from same developer)
+Gtk icons: [candy-icons](https://github.com/EliverLara/candy-icons) (Icons for Sweet [Gtk theme] from same developer)
 
-Text Editor: Mousepad (Xfce default)
+Text Editor: [Mousepad](https://docs.xfce.org/apps/mousepad/start) (Xfce default)
 
-Firefox Theme: Cascade (Cascade is more beatiful than this I edited for my needs.)
+Firefox Theme: [Cascade](https://github.com/andreasgrafen/cascade) (Cascade is more beautiful than this, which I edited for my needs.)
 
 Overview:
+![Screenshot1](https://github.com/EndChapter/dotfiles/raw/main/screenshots/1.png)
+![Screenshot2](https://github.com/EndChapter/dotfiles/raw/main/screenshots/2.png)
+![Screenshot3](https://github.com/EndChapter/dotfiles/raw/main/screenshots/3.png)
