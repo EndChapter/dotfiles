@@ -25,6 +25,8 @@ Firefox Theme: [Cascade](https://github.com/andreasgrafen/cascade) (Cascade is m
 
 Background Changer: [Feh](https://feh.finalrewind.org/) with little bash script
 
+Font: [Iosevka Nerd](https://github.com/ryanoasis/nerd-fonts)
+
 Overview:
 ![Screenshot1](https://github.com/EndChapter/dotfiles/raw/main/screenshots/1.png)
 ![Screenshot2](https://github.com/EndChapter/dotfiles/raw/main/screenshots/2.png)
