@@ -21,7 +21,7 @@ Gtk icons: [candy-icons](https://github.com/EliverLara/candy-icons) (Icons for S
 
 Text Editor: [Mousepad](https://docs.xfce.org/apps/mousepad/start) (Xfce default)
 
-Firefox Theme: [Cascade](https://github.com/andreasgrafen/cascade) (Cascade is more beautiful and responsive than this, which I edited for my needs.)
+Firefox Theme: [Cascade](https://github.com/andreasgrafen/cascade) (Cascade is more beautiful and responsive than this, I edited for my needs.)
 
 Background Changer: [Feh](https://feh.finalrewind.org/) with little bash script
 
