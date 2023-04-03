@@ -1,0 +1,10 @@
+#! /bin/sh
+
+chosen=$(printf "󰾆  Power Save\n󰾅  Balanced\n󰓅  Performance" | rofi -dmenu -i -p "Power Mode:")
+
+case "$chosen" in
+	"󰾆  Power Save") powerprofilesctl set power-save ;;
+	"󰾅  Balanced") powerprofilesctl set balanced ;;
+	"󰓅  Performance") powerprofilesctl set performance ;;
+	*) exit 1 ;;
+esac

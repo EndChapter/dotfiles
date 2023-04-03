@@ -1,0 +1,26 @@
+#!/bin/bash
+
+function getStatus () {
+	dbus-send                                                                                 \
+		--print-reply                                            `# We need the reply.`           \
+		--dest=org.mpris.MediaPlayer2.spotify                    `# Spotify destination.`         \
+		/org/mpris/MediaPlayer2                                  `# Spotify Path.`                \
+		org.freedesktop.DBus.Properties.Get                      `# Get properties from dbus.`    \
+		string:"org.mpris.MediaPlayer2.Player" \
+		string:'PlaybackStatus' \
+		| grep string \
+		| grep -Eo '("(.*)")|(\b[0-9][a-zA-Z0-9.]*\b)' \
+		| sed -E 's/(variant)//' \
+		| sed -E 's/(string)//' \
+		| tr -d '"'
+}
+# get status and write it to $STATUS variable(2>&1) if error happens.
+STATUS=$(getStatus 2>&1)
+if [[ $STATUS == "Playing" ]]; then
+	polybar-msg action "#playpause.hook.2" &>/dev/null
+elif [[ $STATUS == "Paused" ]]; then
+	polybar-msg action "#playpause.hook.1" &>/dev/null
+else
+	polybar-msg action "#playpause.hook.1" &>/dev/null
+fi
+
