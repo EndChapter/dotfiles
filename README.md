@@ -23,6 +23,8 @@ Text Editor: [Mousepad](https://docs.xfce.org/apps/mousepad/start) (Xfce default
 
 Firefox Theme: [Cascade](https://github.com/andreasgrafen/cascade) (Cascade is more beautiful and responsive than this, which I edited for my needs.)
 
+Background Changer: [Feh](https://feh.finalrewind.org/) with little bash script
+
 Overview:
 ![Screenshot1](https://github.com/EndChapter/dotfiles/raw/main/screenshots/1.png)
 ![Screenshot2](https://github.com/EndChapter/dotfiles/raw/main/screenshots/2.png)
