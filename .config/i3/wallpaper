@@ -1,2 +1,2 @@
 #!/bin/bash
-while true; do feh --randomize --bg-scale /home/edch/Downloads/wallpapers/*; sleep 1200; done;
+while true; do feh --randomize --bg-scale ~/Downloads/wallpapers/*; sleep 1200; done;

@@ -30,7 +30,7 @@ exec --no-startup-id dex-autostart --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i /home/edch/Downloads/wallpapers/106483733_p0.png -f --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i ~/Downloads/wallpapers/106483733_p0.png -f --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desverride-redirect = truektop environment-independent system tray GUI for it.
@@ -83,25 +83,25 @@ bindsym $mod+Shift+m exec flatpak run net.lutris.Lutris
 bindsym $mod+Shift+o exec flatpak run com.github.tchx84.Flatseal
 
 # open lol
-bindsym $mod+Shift+u exec /home/edch/Downloads/lol-for-linux-installer/league/launch.sh
+bindsym $mod+Shift+u exec ~/Downloads/lol-for-linux-installer/league/launch.sh
 
 # Open i3 config
-bindsym $mod+Shift+i exec /home/edch/opt/bin/vscodium.AppImage /home/edch/.config/i3/
+bindsym $mod+Shift+i exec ~/opt/bin/vscodium.AppImage ~/.config/i3/
 
 # Open polybar config
-bindsym $mod+Shift+p exec /home/edch/opt/bin/vscodium.AppImage /home/edch/.config/polybar/
+bindsym $mod+Shift+p exec ~/opt/bin/vscodium.AppImage ~/.config/polybar/
 
 # Open TODO
-bindsym $mod+Shift+t exec mousepad /home/edch/TODO
+bindsym $mod+Shift+t exec mousepad ~/TODO
 
 # lock computer
 bindsym $mod+Shift+F1 exec loginctl lock-session
 
 # switch main mode
-bindsym $mod+Shift+F2 exec /home/edch/.config/i3/changeModes.sh 1
+bindsym $mod+Shift+F2 exec ~/.config/i3/changeModes.sh 1
 
 # switch gamemode
-bindsym $mod+Shift+F3 exec /home/edch/.config/i3/changeModes.sh 
+bindsym $mod+Shift+F3 exec ~/.config/i3/changeModes.sh 
 
 # increase brightness
 bindsym $mod+Shift+F7 exec brightnessctl set +5%
@@ -274,10 +274,10 @@ exec_always --no-startup-id i3status
 exec_always killall picom
 # Start Polybar
 # for_window [class="polybar"] floating enable
-# exec_always --no-startup-id /home/edch/.config/polybar/execPolybar.sh
+# exec_always --no-startup-id ~/.config/polybar/execPolybar.sh
 exec_always killall polybar
 # do not Start desktop wallpaper slideshow
-# exec_always /home/edch/.config/i3/wallpaper
+# exec_always ~/.config/i3/wallpaper
 # kill all wallpaper processes by killing bin bash scripts and sleeps
 exec_always killall /bin/bash
 exec_always killall sleep
